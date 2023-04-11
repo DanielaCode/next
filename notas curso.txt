@@ -24,3 +24,7 @@
     utilizaremos yarn build y start para ver como se comporta next en produccion:
     1. build: en la salida en consola se ve que next hizo varias optimizaciones como code splitting que es hacer chunks o pedacitos de codigo js para cargar en la pagina solo lo que sea necesario y todo esto sin ninguna configuracion en webpack ni en ningun lado lo podemos verificar haciendo start y viendo en devtools en network y vemos que ademas a esos trozos de js les asigna un hash para administrar el cache del navegador 
     2. prerendering(SSR server side rendering) de las paginas: se puede verificar si vamos a alguna de las paginas en el navegador despues de hacer start y en devtools en network en response formateamos con el simbolo en barra inferior {} y en el primer response vemos que a viene el html con el contenido osea que se esta haciendo el renderizado en el servidor y no en el navegador lo que aporta al SEO search engine optimization optimizacion para buscadores, com ya todo viene prerenderizado es mucho mas eficiente para todos los dispositivos y motores de busqueda
+
+#Enlazando Paginas 
+    1. creamos barra de navegacioninicialmente con anchor pero notamos que al hacer click se refresca la pagina es decir como que hace peticion al servidor osea un routing por servidor que eso ya no se debe hacer entonces usamos Link de next/link y ya quedo un routing  en client side que es una SPA
+    2. Link tiene otra optimizacion y es que hace prefetching  automarico cuando hago hover sobre link lo podemos ver en devtools corriendo build y en network 
