@@ -10,4 +10,13 @@
         "start": "next start"
     -que pasa si ejecuto yarn start? sale un error por que primero se debe correr yar dev pero dice Couldn't find a `pages` directory. Please create one under the project root entonces creamos pages
     -ya estamos usando next si vamos a http://localhost:3000 sale un 404 pero es por que aun no tenemos index en pages pero ya esta listo
+#Routing
+    Basado en file system(dependera de lo que pongamos en pages)
+        -   todo lo que se conoce como paginas y navegacion se entiende como routing y en next ya tenemos una solucion para no preocuparnos por eso basicamente existen 2 formas de routing en next:
+        1. rutas estaticas: /about/
+            -   agregamos primera ruta estatica o base index.js y vemos que next soporta hot reloading y fast refresh
+            -   creo una pagina mas y le pongo About y automaticamente ahora si escribo  http://localhost:3000/About ya puedo navegar a about sensible a mayusculas
 
+        2. rutas dinamicas: /user/dani , /user/sofi
+            se crea una carpeta por ejemplo producto/mouse produto/teclado la carpeta seria producto y lo que viene despues es una variable entonces dentro de producto creo un archivo con esta notacion [id].js donde id es la variable en este caso teclado y mouse
+            - para capturar ese valor se usa un hoock que es useRouter de next/router
