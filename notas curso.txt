@@ -20,6 +20,7 @@
         2. rutas dinamicas: /user/dani , /user/sofi
             se crea una carpeta por ejemplo producto/mouse produto/teclado la carpeta seria producto y lo que viene despues es una variable entonces dentro de producto creo un archivo con esta notacion [id].js donde id es la variable en este caso teclado y mouse
             - para capturar ese valor se usa un hoock que es useRouter de next/router
-#Under the hood 
+#Under the hood (optimizaciones)
     utilizaremos yarn build y start para ver como se comporta next en produccion:
     1. build: en la salida en consola se ve que next hizo varias optimizaciones como code splitting que es hacer chunks o pedacitos de codigo js para cargar en la pagina solo lo que sea necesario y todo esto sin ninguna configuracion en webpack ni en ningun lado lo podemos verificar haciendo start y viendo en devtools en network y vemos que ademas a esos trozos de js les asigna un hash para administrar el cache del navegador 
+    2. prerendering(SSR server side rendering) de las paginas: se puede verificar si vamos a alguna de las paginas en el navegador despues de hacer start y en devtools en network en response formateamos con el simbolo en barra inferior {} y en el primer response vemos que a viene el html con el contenido osea que se esta haciendo el renderizado en el servidor y no en el navegador lo que aporta al SEO search engine optimization optimizacion para buscadores, com ya todo viene prerenderizado es mucho mas eficiente para todos los dispositivos y motores de busqueda
