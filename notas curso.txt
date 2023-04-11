@@ -1,6 +1,6 @@
-installar next  automatica:
-    - CLI - yarn create-next-app
-installar next  manual:
+#instalar next  automatica:
+     CLI - yarn create-next-app
+#instalar next  manual:
     - npm init -y //crea package.json lo necesitamos para instalar los packetes que usaremos
     - yarn add next react react-dom //decimos a yarn que agregue estas dependencias
     - si  no tengo yarn npm install --global yarn
