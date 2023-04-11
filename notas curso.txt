@@ -1,6 +1,6 @@
 #instalar next  automatica:
      CLI - yarn create-next-app
-#instalar next  manual:
+#instalar next  manual(recomendado):
     - npm init -y //crea package.json lo necesitamos para instalar los packetes que usaremos
     - yarn add next react react-dom //decimos a yarn que agregue estas dependencias
     - si  no tengo yarn npm install --global yarn
@@ -8,4 +8,6 @@
         "dev": "next",
         "build": "next build",
         "start": "next start"
+    -que pasa si ejecuto yarn start? sale un error por que primero se debe correr yar dev pero dice Couldn't find a `pages` directory. Please create one under the project root entonces creamos pages
+    -ya estamos usando next si vamos a http://localhost:3000 sale un 404 pero es por que aun no tenemos index en pages pero ya esta listo
 
