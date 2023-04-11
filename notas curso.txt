@@ -6,8 +6,8 @@
     - si  no tengo yarn npm install --global yarn
     - agregar scripts en package.json
         "dev": "next",
-        "build": "next build",
-        "start": "next start"
+        "build": "next build", //build produccion
+        "start": "next start" //servidor node para produccion
     -que pasa si ejecuto yarn start? sale un error por que primero se debe correr yar dev pero dice Couldn't find a `pages` directory. Please create one under the project root entonces creamos pages
     -ya estamos usando next si vamos a http://localhost:3000 sale un 404 pero es por que aun no tenemos index en pages pero ya esta listo
 #Routing
@@ -20,3 +20,6 @@
         2. rutas dinamicas: /user/dani , /user/sofi
             se crea una carpeta por ejemplo producto/mouse produto/teclado la carpeta seria producto y lo que viene despues es una variable entonces dentro de producto creo un archivo con esta notacion [id].js donde id es la variable en este caso teclado y mouse
             - para capturar ese valor se usa un hoock que es useRouter de next/router
+#Under the hood 
+    utilizaremos yarn build y start para ver como se comporta next en produccion:
+    1. build: en la salida en consola se ve que next hizo varias optimizaciones como code splitting que es hacer chunks o pedacitos de codigo js para cargar en la pagina solo lo que sea necesario y todo esto sin ninguna configuracion en webpack ni en ningun lado lo podemos verificar haciendo start y viendo en devtools en network y vemos que ademas a esos trozos de js les asigna un hash para administrar el cache del navegador 
