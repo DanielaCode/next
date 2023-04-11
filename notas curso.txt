@@ -31,3 +31,4 @@
 
 #creando API con Next
     1 . los endpoints se hacen con rutas asi como antes. creamos en pages una carpeta que se llama api(esto es por convencion).
+    2. para hacer la seleccion de un solo aguacate debemos usar una ruta dinamica
