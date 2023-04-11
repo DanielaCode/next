@@ -28,3 +28,6 @@
 #Enlazando Paginas 
     1. creamos barra de navegacioninicialmente con anchor pero notamos que al hacer click se refresca la pagina es decir como que hace peticion al servidor osea un routing por servidor que eso ya no se debe hacer entonces usamos Link de next/link y ya quedo un routing  en client side que es una SPA
     2. Link tiene otra optimizacion y es que hace prefetching  automarico cuando hago hover sobre link lo podemos ver en devtools corriendo build y en network 
+
+#creando API con Next
+    1 . los endpoints se hacen con rutas asi como antes. creamos en pages una carpeta que se llama api(esto es por convencion).
