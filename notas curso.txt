@@ -34,4 +34,4 @@
     2. para hacer la seleccion de un solo aguacate debemos usar una ruta dinamica
     3. DEBUG con nextjs en package.json cambio el script a "dev": " NODE_OPTIONS='--inspect' next" luego apago la app y la corro de nuevo y voy a about:inspect en una ventana de google, doy click en inspect y se abre devtools
 #consumiendo api desde un componente y pintandolo en el dom 
-    1. usando fetch para hacer un request a mi api
+    1. usando fetch para hacer un request a mi api desde un componente de react y pintarlo en el dom
